@@ -1,5 +1,11 @@
 david:
-    first_name: "David"
-    last_name: "Alvarado"
-    email: "david@test.com"
-    profile_name: "davidalvarado"
+  first_name: "David"
+  last_name: "Alvarado"
+  email: "david@test.com"
+  profile_name: "davidalvarado"
+
+gil:
+  first_name: "Gil"
+  last_name: "Aguilar"
+  email: "gil@test.com"
+  profile_name: "gilaguilar"
