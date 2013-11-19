@@ -9,3 +9,9 @@ gil:
   last_name: "Aguilar"
   email: "gil@test.com"
   profile_name: "gilaguilar"
+
+mike:
+  first_name: "Mike"
+  last_name: "Dafrog"
+  email: "mike@dafrog.com"
+  profile_name: "mikedafrog"
