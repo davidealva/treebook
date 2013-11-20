@@ -3,6 +3,7 @@ david:
   last_name: "Alvarado"
   email: "david@test.com"
   profile_name: "davidalvarado"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
 
 gil:
   first_name: "Gil"

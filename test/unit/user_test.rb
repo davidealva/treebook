@@ -40,9 +40,9 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "a user can have a correctly formatted profile name" do
-    user = User.new(first_name: 'David', last_name: 'Alvarado', email: 'david@test.com')
+    user = User.new(first_name: 'David', last_name: 'Alvarado', email: 'uncled@test.com')
     user.password = user.password_confirmation = 'password'
-    user.profile_name = 'davidalvarado'
+    user.profile_name = 'unclerake '
     assert user.valid?
   end
 
@@ -53,9 +53,14 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "that creating friendships on a user works" do 
-    users(:david).friends << users(:mike)
-    users(:david).friends.reload
-    assert users(:david).friends.include?(users(:mike))
+    users(:david).pending_friends << users(:mike)
+    users(:david).pending_friends.reload
+    assert users(:david).pending_friends.include?(users(:mike))
   end
+
+  test "that calling to_param on a user returns the profile_name" do 
+    assert_equal "davidalvarado", users(:david).to_param
+  end
+
 end
 
